@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block contenido %}  
+<div class="container" >
+<div class= "row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+Agregar Usuario:
+
+<form method="POST" action="/add">
+
+	<div class="form-group"> 
+		<br>
+		<label>User</label>
+	    {{ form.user(class = 'form-control')  }}
+	    <br>
+		<label>Password</label>	    
+		{{ form.password(class = 'form-control') }} 
+    	<br>
+    	
+        <button  type="submit" class="btn btn-success">Ingresar </button>
+     
+		</div>
+
+	</form>
+	</div>
+</div>
+</div>
+
+{% endblock %}

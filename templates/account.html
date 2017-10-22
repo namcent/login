@@ -1,0 +1,25 @@
+<div class="container" >
+<div class= "row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">{% extends 'base.html' %}
+
+{% block contenido %}  
+
+{% if valido %}
+Bienvenido al sistema
+<br><br>
+Usuario: {{ usuario  }}
+<br>
+Password: {{ password  }}
+
+{% else %}
+<br><br>
+Usuario o contraseña incorrecto. 
+
+<br><br>
+
+<a href="/create" class="btn btn-success">Agregar usuarios </a>
+{% endif %}
+{% endblock %}
+</div>
+</div>
+</div>
